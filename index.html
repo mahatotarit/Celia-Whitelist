@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Token Whitelist Platform</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+
+      <header>
+        <h1>Celia Whitelist</h1>
+        <div class="wallet-info">
+          <span class="balance">Balance: <span id="tokenBalance">10,000</span> CELIA</span>
+          <button class="connect-wallet">Connect Wallet</button>
+        </div>
+      </header>
+
+      <main>
+        <div class="Whitelist-card">
+
+          <div class="stats-container">
+            <div class="stat-item">
+              <h3>APY</h3>
+              <p>14.5%</p>
+            </div>
+            <div class="stat-item">
+              <h3>Target Whitelistd</h3>
+              <p>500,000,00 CELIA</p>
+            </div>
+            <div class="stat-item">
+              <h3>Target Whitelistrs</h3>
+              <p>23000</p>
+            </div>
+          </div>
+
+          <div class="Whitelist-container">
+            <h2>Whitelist Tokens</h2>
+            <div class="input-container">
+              <input type="number" id="WhitelistAmount" placeholder="Enter token amount to Whitelist" />
+              <button class="max-btn">MAX</button>
+            </div>
+            <div class="action-buttons">
+              <button class="Whitelist-btn">Whitelist</button>
+              <button class="unWhitelist-btn">UnWhitelist</button>
+            </div>
+          </div>
+
+          <div class="user-stats">
+            <div class="stat-row">
+              <span>Your Whitelist:</span>
+              <span id="userWhitelist">0 CELIA</span>
+            </div>
+            <div class="stat-row">
+              <span>Earned Rewards:</span>
+              <span>
+                <span id="earnedRewards">0 CELIA</span>
+                (Locked)
+              </span>
+            </div>
+            <button class="claim-btn">Claim Rewards</button>
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+    <script src="wallet/ethers.js"></script>
+    <script src="main.js"></script>
+    <script src="wallet/wallet.js"></script>
+
+  </body>
+</html>
